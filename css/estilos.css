@@ -2,6 +2,10 @@
 :root{
   --primary-color: #7ACC2D;
   --secondary-color: white;
+  --black-color: #313337;
+  --white-color: white;
+  --space:10px;
+  --space-2:20px;
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
@@ -84,45 +88,55 @@ nav ul li a:hover{
   background-color: #5e9e22;
 }
 
-.tags{
+.beneficios{
   display: flex;
-  justify-content: space-evenly;
-  padding  : 10%;
+  padding: 10%;
 }
 
-.tag{
+.beneficio{
   text-align: center;
-  width: 200px;
+  padding: 20px;
 }
 
-.tag .tag__image img{
-  width: 112px;
-}
-
-.recomendations{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* justify-content: space-around; */
-}
-
-.recomendation__img img{
+.beneficio img{
   width: 100%;
 }
 
-.recomendation{
-  margin: 5px;
-  width: 200px;
-  overflow: hidden;
-  box-shadow: 0 0 1px 1px #e6e5e9;
+.text_beneficio{
+  text-align: justify;
 }
 
-.recomentacion__title{
+.mentions{
+  display: flex;
+  padding: 7%;
+}
+
+.mentions img{
+  width: 100%;
+}
+
+.mention{
+  padding: var(--space);
+}
+
+.mention_title{
+  font-size: 30px;
   text-align: center;
 }
 
-.recomendation__img{
-  object-fit: cover;
-  width: inherit;
-  height: inherit;
+.content_mention{
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.mention .text{
+  padding: var(--space);
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: var(--space);
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
