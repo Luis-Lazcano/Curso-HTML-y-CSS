@@ -1,0 +1,128 @@
+/* Variables */
+:root{
+  --primary-color: #7ACC2D;
+  --secondary-color: white;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: var(--secondary-color);
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  margin-left: 20px;
+  list-style: none;
+}
+
+nav ul li a{
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: black;
+}
+
+.hero{
+  padding: 12%;
+  text-align: center;
+}
+
+.products{
+  background-image: url('../images/curve.png');
+  height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 15%;
+  display: flex;
+}
+
+.product{
+  padding: 18px;
+  margin-top: -240px;
+}
+
+.product .content{
+  background-color: var(--secondary-color);
+  padding: 15px;
+  box-shadow: 0 0 1px #c1bcbc;
+}
+
+.img_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  border:0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover{
+  background-color: #5e9e22;
+}
+
+.tags{
+  display: flex;
+  justify-content: space-evenly;
+  padding  : 10%;
+}
+
+.tag{
+  text-align: center;
+  width: 200px;
+}
+
+.tag .tag__image img{
+  width: 112px;
+}
+
+.recomendations{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-around; */
+}
+
+.recomendation__img img{
+  width: 100%;
+}
+
+.recomendation{
+  margin: 5px;
+  width: 200px;
+  overflow: hidden;
+  box-shadow: 0 0 1px 1px #e6e5e9;
+}
+
+.recomentacion__title{
+  text-align: center;
+}
+
+.recomendation__img{
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+}
