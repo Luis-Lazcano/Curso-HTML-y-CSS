@@ -5,14 +5,15 @@
   }
 
   .product{
-    margin-top: auto;
-  }
-
-  .main-section{
+    margin-top: 0px;
     padding: 4%;
   }
 
-  .tags, .recomendations{
+  .hero h1{
+      padding: 4%;
+  }
+
+  .beneficios, .mentions{
     display: inherit;
   }
 }
