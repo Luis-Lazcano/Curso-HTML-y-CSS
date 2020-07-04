@@ -171,8 +171,4 @@ footer{
   padding: var(--space);
   background-color: var(--black-color);
   color: var(--white-color);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
