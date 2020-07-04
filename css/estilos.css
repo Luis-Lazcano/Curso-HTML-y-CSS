@@ -4,8 +4,10 @@
   --secondary-color: white;
   --black-color: #313337;
   --white-color: white;
+  --normal:12px;
   --space:10px;
   --space-2:20px;
+  --box:0 0 2px 1px #e6e5e9
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
@@ -15,6 +17,19 @@ html, body{
   padding: 0;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
+}
+
+p ,label{
+  font-size: var(--normal);
+}
+
+.modulo_pago input{
+  margin-bottom: var(--space);
+  width: 100%;
+  padding: 15px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
 }
 
 nav{
@@ -131,6 +146,23 @@ nav ul li a:hover{
   padding: var(--space);
 }
 
+/*--------Venta ------------*/
+
+.container{
+  margin-top: 15vh;
+}
+
+.modulo_pago{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+
+.modulo_pago_images{
+  max-width: 150px;
+  margin: 0 auto;
+}
+/*-------------------------*/
 footer{
   display: flex;
   justify-content: space-between;
@@ -139,4 +171,8 @@ footer{
   padding: var(--space);
   background-color: var(--black-color);
   color: var(--white-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
